@@ -1,0 +1,9 @@
+# Ignorar o ambiente virtual
+venv/
+__pycache__/
+*.pyc
+
+# Ignorar variáveis sensíveis
+.env
+
+# Outras pastas/arquivos temporários que você quiser
