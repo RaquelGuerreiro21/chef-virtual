@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Chef Virtual 🍳</title>
+</head>
+<body>
+    <h1>Chef Virtual 👨‍🍳</h1>
+    <form method="POST">
+        <label for="ingredientes">Digite os ingredientes disponíveis:</label><br>
+        <textarea name="ingredientes" rows="5" cols="40"></textarea><br><br>
+        <button type="submit">Gerar Receita</button>
+    </form>
+
+    {% if receita %}
+        <h2>🍽️ Receita Gerada:</h2>
+        <pre>{{ receita }}</pre>
+    {% endif %}
+</body>
+</html>
