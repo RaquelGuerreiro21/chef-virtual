@@ -3,7 +3,7 @@ from prompt import gerar_receita
 import os
 
 app = Flask(__name__)
-app.secret_key = os.getenv("", "chave-secreta-padrao")  # use variável no deploy
+app.secret_key = os.getenv("FLASK_SECRET_KEY", "chave-secreta-padrao")  # use variável no deploy
 
 MAX_CHAMADAS = 3  # limite por sessão
 
